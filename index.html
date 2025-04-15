@@ -114,9 +114,46 @@
             <header>
                 <h2>Message Us</h2>
             </header>
-
-            <!-- Message Us Form -->
-            <form></form>
+            <div class="form-container">
+                <!-- Form Section -->
+                <div class="form-section">
+                  <form>
+                    <div class="form-group">
+                      <label for="nama">Nama</label>
+                        <span>:</span>
+                      <input type="text" id="nama" placeholder="Nama" />
+                    </div>
+                    <div class="form-group">
+                      <label for="dob">Tanggal Lahir</label>
+                      <span>:</span>
+                      <input type="date" id="dob" value="2023-04-02" />
+                    </div>
+                    <div class="form-group">
+                      <label>Jenis Kelamin</label>
+                      <span>:</span>
+                      <div class="gender-options">
+                        <label><input type="radio" name="gender" checked /> Laki-Laki</label>
+                        <label><input type="radio" name="gender" /> Perempuan</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="pesan">Pesan</label>
+                      <span>:</span>
+                      <textarea id="pesan" placeholder="Pesan"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                  </form>
+                </div>
+            
+                <!-- Output Section -->
+                <div class="output-section">
+                  <p>Current time: <span id="current-time">-</span></p>
+                  <p>Nama: <span id="sender-name"></span></p>
+                  <p>Tanggal Lahir: <span id="sender-bday"></span></p>
+                  <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                  <p>Pesan: <span id="sender-message"></span></p>
+                </div>
+              </div>       
         </section>
     </main>
 
