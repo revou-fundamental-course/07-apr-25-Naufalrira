@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>None Company</title>
+    <title>Nova Creatives</title>
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
@@ -21,7 +21,7 @@
     <!-- Header Content -->
     <header class="main-header">
         <!-- Logo -->
-        <div class="main-logo"></div>
+        <div class="main-logo"><img src="assets/None.jpg" alt="Nova Creatives"></div>
 
         <!-- Navigation* -->
         <nav>
@@ -39,16 +39,23 @@
         <!-- Home Section -->
         <section id="home-section">
             <header>
-                <h2>Hi <span id="viewer-name"></span>, Welcome to my website</h2>
+                <h2>Hi <span id="viewer-name"></span>, Welcome to my Website</h2>
             </header>
 
-            <!-- Banner Content* -->
-            <div class="banner-img"></div>
-
-            <!-- Banner Text -->
-            <article class="section-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
-            </article>
+            <!-- Banner Content with Overlay -->
+            <div class="banner">
+                <img src="assets/homebg.jpg" alt="Background">
+                <div class="banner-overlay">
+                    <div class="banner-content">
+                        <ul class="highlights">
+                            <li>10+ Years of Experience</li>
+                            <li>100+ Projects Delivered</li>
+                            <li>Trusted by Global Brands</li>
+                        </ul>
+                        <a href="#message-section" class="cta-button">Get Started</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <hr />
@@ -61,7 +68,47 @@
 
             <!-- Our Profile Text -->
             <article class="section-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                <h3>About Nova Creatives</h3>
+                <p>Nova Creatives is a digital agency focused on transforming ideas into powerful digital products. Our
+                    team consists of designers, developers, and strategists with a shared passion for innovation.</p>
+
+                <div class="company-mission">
+                    <h4>Our Mission</h4>
+                    <p>To help businesses grow through smart design and cutting-edge technology.</p>
+                </div>
+
+                <div class="company-vision">
+                    <h4>Our Vision</h4>
+                    <p>To be a global leader in creative digital solutions.</p>
+                </div>
+
+                <!-- Our team Section -->
+                <h3>Our Team</h3>
+                <div class="team-container">
+                    <div class="team-member">
+                        <div class="profile-image">
+                            <img src="assets/team-img.jpg" alt="Alex Rivera">
+                        </div>
+                        <h4>Alex Rivera</h4>
+                        <p>Founder & Creative Director</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="profile-image">
+                            <img src="assets/team-img.jpg" alt="Maya Chen">
+                        </div>
+                        <h4>Maya Chen</h4>
+                        <p>Lead Developer</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="profile-image">
+                            <img src="assets/team-img.jpg" alt="Jamal Ortega">
+                        </div>
+                        <h4>Jamal Ortega</h4>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
             </article>
         </section>
 
@@ -73,9 +120,36 @@
                 <h2>Portfolio</h2>
             </header>
 
-            <!-- Portfolio Text -->
+            <!-- Portfolio Content -->
             <article class="section-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="assets/ecommerce.jpg" alt="E-Commerce Website">
+                        </div>
+                        <h3>E-Commerce Website</h3>
+                        <p class="category">Web Development</p>
+                        <p>An online store built with modern UI/UX and integrated payment gateway.</p>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="assets/app.jpg" alt="Mobile App Design">
+                        </div>
+                        <h3>Mobile App Design</h3>
+                        <p class="category">UI/UX Design</p>
+                        <p>A sleek and user-friendly mobile app for task management.</p>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="assets/brand.jpg" alt="Corporate Branding">
+                        </div>
+                        <h3>Corporate Branding</h3>
+                        <p class="category">Branding</p>
+                        <p>Brand identity design including logo, typography, and brand guide.</p>
+                    </div>
+                </div>
             </article>
         </section>
 
@@ -88,7 +162,6 @@
             </header>
 
             <section class="hq-container">
-
                 <div class="hq-item">
                     <img src="assets/Jakarta.jpg" alt="Jakarta HQ">
                     <h4>Jakarta Headquarters</h4>
@@ -98,13 +171,12 @@
                     <img src="assets/Bandung.jpeg" alt="Bandung HQ">
                     <h4>Bandung Office</h4>
                 </div>
-                
+
                 <div class="hq-item">
                     <img src="assets/Mumbai.jpg" alt="Mumbai HQ">
                     <h4>Mumbai Branch</h4>
                 </div>
             </section>
-
         </section>
 
         <hr />
@@ -115,48 +187,46 @@
                 <h2>Message Us</h2>
             </header>
             <div class="form-output-wrapper">
-            <div class="form-container">
-                <!-- Form Section -->
-                <div class="form-section">
-                  <form name="message-form" onsubmit="return validateForm()">
-                    <div class="form-group">
-                      <label for="nama">Nama</label>
-                        <span>:</span>
-                      <input type="text" id="nama" placeholder="Nama" required />
+                <div class="form-container">
+                    <!-- Form Section -->
+                    <div class="form-section">
+                        <form name="message-form" onsubmit="return validateForm()">
+                            <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <span>:</span>
+                                <input type="text" id="nama" placeholder="Nama" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Tanggal Lahir</label>
+                                <span>:</span>
+                                <input type="date" id="dob" required />
+                            </div>
+                            <div class="form-group">
+                                <label>Jenis Kelamin</label>
+                                <span>:</span>
+                                <div class="gender-options">
+                                    <input type="radio" id="laki-laki" name="gender" value="Laki-Laki" />
+                                    <label for="laki-laki">Laki-Laki</label>
+                                    <input type="radio" id="perempuan" name="gender" value="Perempuan" />
+                                    <label for="perempuan">Perempuan</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pesan">Pesan</label>
+                                <span>:</span>
+                                <textarea id="pesan" placeholder="Pesan" name="pesan"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                      <label for="dob">Tanggal Lahir</label>
-                      <span>:</span>
-                      <input type="date" id="dob" required />
-                    </div>
-                    <div class="form-group">
-                      <label>Jenis Kelamin</label>
-                      <span>:</span>
-                      <div class="gender-options">
-                        <input type="radio" id="laki-laki" name="gender" value="Laki-Laki" />
-                        <label for="laki-laki">Laki-Laki</label>
-                        <input type="radio" id="perempuan" name="gender" value="Perempuan" />
-                        <label for="perempuan">Perempuan</label>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="pesan">Pesan</label>
-                      <span>:</span>
-                      <textarea id="pesan" placeholder="Pesan" name="pesan"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Submit</button>
-                  </form>
                 </div>
-            
-                
-              </div>
-              <!-- Output Section -->
+                <!-- Output Section -->
                 <div class="output-section">
-                  <p>Current time: <span id="current-time">-</span></p>
-                  <p>Nama: <span id="sender-name"></span></p>
-                  <p>Tanggal Lahir: <span id="sender-bday"></span></p>
-                  <p>Jenis Kelamin: <span id="sender-gender"></span></p>
-                  <p>Pesan: <span id="sender-message"></span></p>
+                    <p>Current time: <span id="current-time">-</span></p>
+                    <p>Nama: <span id="sender-name"></span></p>
+                    <p>Tanggal Lahir: <span id="sender-bday"></span></p>
+                    <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                    <p>Pesan: <span id="sender-message"></span></p>
                 </div>
             </div>
         </section>
@@ -166,7 +236,7 @@
 
     <!-- Footer Content -->
     <footer>
-        <span>Created By NNN@2025</span>
+        <span>Created By Nova Creatives © 2025</span>
     </footer>
 
     <!-- JS External -->
